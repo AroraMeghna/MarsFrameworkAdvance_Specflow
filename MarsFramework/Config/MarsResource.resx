@@ -125,7 +125,7 @@
     <value>C:\Meghna\mvp\WorkingCopy\marsframework-master\resources\resources.xlsx</value>
   </data>
   <data name="IsLogin" xml:space="preserve">
-    <value>true</value>
+    <value>false</value>
     <comment>If true Login, else Register</comment>
   </data>
   <data name="ReportPath" xml:space="preserve">
