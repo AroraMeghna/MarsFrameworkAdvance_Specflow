@@ -161,8 +161,9 @@
     <Compile Include="Pages\SignIn.cs" />
     <Compile Include="Pages\SignUp.cs" />
     <Compile Include="Pages\Profile.cs" />
-    <Compile Include="Specflow\StepBinding\Hooks.cs" />
+    <Compile Include="Specflow\StepBinding\BaseHooks.cs" />
     <Compile Include="Specflow\StepBinding\RegisrationSteps.cs" />
+    <Compile Include="Specflow\StepBinding\SignInSteps.cs" />
     <Compile Include="Test\BaseTest.cs" />
     <Compile Include="Test\ProfileTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

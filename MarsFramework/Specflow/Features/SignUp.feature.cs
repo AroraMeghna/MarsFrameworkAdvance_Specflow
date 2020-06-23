@@ -74,13 +74,13 @@ namespace MarsFramework.Specflow.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Successful SignUp ( Registration)")]
+        [NUnit.Framework.DescriptionAttribute("Successful SignUp")]
         [NUnit.Framework.CategoryAttribute("automate")]
-        public virtual void SuccessfulSignUpRegistration()
+        public virtual void SuccessfulSignUp()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful SignUp ( Registration)", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful SignUp", null, new string[] {
                         "automate"});
 #line 6
 this.ScenarioInitialize(scenarioInfo);

@@ -11,7 +11,7 @@ using TechTalk.SpecFlow;
 namespace MarsFramework.Specflow.StepBinding
 {
     [Binding]
-    class Hooks : Base
+    public class BaseHooks : Base
     {
         #region setup and tear down
         [BeforeScenario]
@@ -40,22 +40,22 @@ namespace MarsFramework.Specflow.StepBinding
             {
                 if (IsLogin == "true")
                 {
-                    SignIn loginobj = new SignIn();
+                    SignIn Signinobj = new SignIn();
                     //Populate the excel data
-                    ExcelLib.PopulateInCollection(Base.ExcelPath, "SignIn");
-                    loginobj.LoginSteps(ExcelLib.ReadData(2, "Username"), ExcelLib.ReadData(2, "Password"));
+                    ExcelLib.PopulateInCollection(ExcelPath, "SignIn");
+                    Signinobj.LoginSteps(ExcelLib.ReadData(2, "Username"), ExcelLib.ReadData(2, "Password"));
+                    GlobalDefinitions.wait(20);
                 }
                 else
                 {
                     SignUp Signupobj = new SignUp();
-                    Signupobj.register(ExcelLib.ReadData(2, "FirstName"), ExcelLib.ReadData(2, "LastName"), ExcelLib.ReadData(2, "Email"), ExcelLib.ReadData(2, "Password"), ExcelLib.ReadData(2, "ConfirmPswd"));
+                    //GlobalDefinitions.ExcelLib.PopulateInCollection(Base.ExcelPath, "SignUp");
+                    //Signupobj.register(ExcelLib.ReadData(2, "FirstName"), ExcelLib.ReadData(2, "LastName"), ExcelLib.ReadData(2, "Email"), ExcelLib.ReadData(2, "Password"), ExcelLib.ReadData(2, "ConfirmPswd"));
                 }
             }
             //Set Implicit Wait
             GlobalDefinitions.wait(20);
         }
-
-
         [AfterScenario]
         public void AfterScenario(ScenarioContext scenarioContext)
         {
@@ -88,5 +88,6 @@ namespace MarsFramework.Specflow.StepBinding
             driver.Quit();
         }
         #endregion
+
     }
 }

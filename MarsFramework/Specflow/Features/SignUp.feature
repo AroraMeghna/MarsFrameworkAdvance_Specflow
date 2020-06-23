@@ -3,7 +3,7 @@
 	as a user, I want to register successfully
 
 @automate
-Scenario: Successful SignUp ( Registration)
+Scenario: Successful SignUp
 Given I have navigated to registration page and entered all valid credentials 
 When I clickon Join
 Then the I get message " User has joined successfully"
