@@ -75,13 +75,13 @@ namespace MarsFramework.Specflow.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select Availability")]
+        [NUnit.Framework.DescriptionAttribute("SelectAvailability")]
         [NUnit.Framework.CategoryAttribute("automate")]
         public virtual void SelectAvailability()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select Availability", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SelectAvailability", null, new string[] {
                         "automate"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -107,9 +107,6 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.Given("I have navigated to profile page  and I clicked on Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 9
- testRunner.When("I select  Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 10
  testRunner.Then("I should be able to select availability time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -117,15 +114,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Availability")]
+        [NUnit.Framework.DescriptionAttribute("EditAvailability")]
         [NUnit.Framework.CategoryAttribute("automate")]
         public virtual void EditAvailability()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Availability", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("EditAvailability", null, new string[] {
                         "automate"});
-#line 13
+#line 12
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -145,13 +142,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 13
+    testRunner.Given("I have navigated to profile page and clicked on edit Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 14
-    testRunner.Given("I have navigated to profile page and clicked on Availability", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 15
- testRunner.When("I Edit Availability time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 16
  testRunner.Then("the updated availability time is displayed on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -159,15 +153,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Hours")]
+        [NUnit.Framework.DescriptionAttribute("EditHours")]
         [NUnit.Framework.CategoryAttribute("automate")]
         public virtual void EditHours()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Hours", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("EditHours", null, new string[] {
                         "automate"});
-#line 20
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -187,13 +181,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 21
-    testRunner.Given("I have navigated to profile page and clicked on Edit Hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 19
+    testRunner.Given("I have navigated to profile page and clicked on edit Hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 22
- testRunner.When("I Select the Hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 23
+#line 20
  testRunner.Then("I should be able to select the Hours", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -201,15 +192,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select Earn Target")]
+        [NUnit.Framework.DescriptionAttribute("SelectEarnTarget")]
         [NUnit.Framework.CategoryAttribute("automate")]
         public virtual void SelectEarnTarget()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select Earn Target", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("SelectEarnTarget", null, new string[] {
                         "automate"});
-#line 26
+#line 23
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -229,13 +220,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 27
-    testRunner.Given("I have navigated to profile page and clicked on Earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 24
+    testRunner.Given("I have navigated to profile page and clicked on earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 28
- testRunner.When("I Select Earn target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 29
+#line 25
  testRunner.Then("I should be able to select Earn target successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -243,15 +231,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Earn Target")]
+        [NUnit.Framework.DescriptionAttribute("EditEarnTarget")]
         [NUnit.Framework.CategoryAttribute("automate")]
         public virtual void EditEarnTarget()
         {
             string[] tagsOfScenario = new string[] {
                     "automate"};
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Earn Target", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("EditEarnTarget", null, new string[] {
                         "automate"});
-#line 32
+#line 28
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -271,13 +259,10 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 33
-    testRunner.Given("I have navigated to profile page and clicked on Earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 29
+    testRunner.Given("I have navigated to profile page and clicked on edit earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 34
- testRunner.When("I click on Edit Earn Target", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 35
+#line 30
  testRunner.Then("I should be able to Edit earn target successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -293,7 +278,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "automate"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Language", null, new string[] {
                         "automate"});
-#line 38
+#line 33
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -313,13 +298,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 39
+#line 34
     testRunner.Given("I have clicked on Add language in the Language tab on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 40
+#line 35
  testRunner.When("I enter language and select language level and click on add new button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 41
+#line 36
  testRunner.Then("I should be able to add new language and view added language on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -335,7 +320,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "automate"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Language", null, new string[] {
                         "automate"});
-#line 44
+#line 39
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -355,13 +340,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 45
+#line 40
     testRunner.Given("I have clicked on Edit button  in the Language tab on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 46
+#line 41
  testRunner.When("I Edit the language and click on update button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 47
+#line 42
  testRunner.Then("I should be able to view the updated Language on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -377,7 +362,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "automate"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Language", null, new string[] {
                         "automate"});
-#line 51
+#line 46
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -397,13 +382,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 52
+#line 47
     testRunner.Given("I have clicked on  the Language tab on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 53
+#line 48
  testRunner.When("I click on Delete button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 54
+#line 49
  testRunner.Then("I should be able to delete the language and the message \" Language deleted\" is di" +
                         "splayed on screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -420,7 +405,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "automate"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Description", null, new string[] {
                         "automate"});
-#line 58
+#line 53
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -440,13 +425,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 59
+#line 54
     testRunner.Given("I have clicked on  the Language tab on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 60
+#line 55
  testRunner.When("I click on Delete button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 61
+#line 56
  testRunner.Then("I should be able to delete the language and the message \" Language deleted\" is di" +
                         "splayed on screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -463,7 +448,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "automate"};
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Description", null, new string[] {
                         "automate"});
-#line 65
+#line 60
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -483,13 +468,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 66
+#line 61
     testRunner.Given("I have clicked on  the Language tab on profile page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 67
+#line 62
  testRunner.When("I click on Delete button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 68
+#line 63
  testRunner.Then("I should be able to delete the language and the message \" Language deleted\" is di" +
                         "splayed on screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

@@ -38,6 +38,12 @@ namespace MarsFramework.Pages
             // Selecting category - programming and Tech
             //SubCategorylink.Click();
         }
+
+        internal void SkillsCategory(object category, object subcategory)
+        {
+            throw new NotImplementedException();
+        }
+
         internal void SkillsCategory(string category, string subcategory)
         {
             AllCategory.Click();

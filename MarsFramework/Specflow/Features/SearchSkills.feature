@@ -3,7 +3,7 @@
 
 @automate
 Scenario: Search Skills by Categories and by SubCategories
-	Given I click search icon on Profile Page
+	Given I have navigated to searchskills page and click on category and suncategory 
 	When I click category and subcategory
 	Then The search results should be displayed by category and subcategory
 
@@ -13,17 +13,3 @@ Scenario: Search Skills by filters Online
 	And I input search skills
 	When I choose Filter by Online
 	Then The search results should be filtered by Online
-
-@automate
-Scenario: Search Skills by filters Onsite
-	Given I click search icon on Profile Page
-	And I input search skills
-	When I choose Filter by OnSite
-	Then The search results should be filtered by OnSite
-
-@automate
-Scenario: Search Skills by filters ShowAll
-	Given I click search icon on Profile Page
-	And I input search skills
-	When I choose Filter by ShowAll
-	Then The search results should be filtered by ShowAll

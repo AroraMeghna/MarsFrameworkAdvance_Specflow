@@ -163,6 +163,7 @@
     <Compile Include="Pages\Profile.cs" />
     <Compile Include="Specflow\StepBinding\BaseHooks.cs" />
     <Compile Include="Specflow\StepBinding\RegisrationSteps.cs" />
+    <Compile Include="Specflow\StepBinding\SearchSkillsSteps.cs" />
     <Compile Include="Specflow\StepBinding\SignInSteps.cs" />
     <Compile Include="Test\BaseTest.cs" />
     <Compile Include="Test\ProfileTest.cs" />

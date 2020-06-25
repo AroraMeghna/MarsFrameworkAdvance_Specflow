@@ -4,34 +4,29 @@
 	I should be able to update data on Pofile  page
 
 	@automate
-Scenario: Select Availability
+Scenario: SelectAvailability
     Given I have navigated to profile page  and I clicked on Availability
-	When  I select  Availability
 	Then I should be able to select availability time 
 
 @automate
-Scenario: Edit Availability
-    Given I have navigated to profile page and clicked on Availability
-	When I Edit Availability time
+Scenario: EditAvailability
+    Given I have navigated to profile page and clicked on edit Availability
 	Then the updated availability time is displayed on profile page
 
 	
 @automate
-Scenario: Edit Hours
-    Given I have navigated to profile page and clicked on Edit Hours
-	When I Select the Hours
+Scenario: EditHours
+    Given I have navigated to profile page and clicked on edit Hours
 	Then I should be able to select the Hours
 
 	@automate
-Scenario: Select Earn Target
-    Given I have navigated to profile page and clicked on Earn Target
-	When I Select Earn target
+Scenario: SelectEarnTarget
+    Given I have navigated to profile page and clicked on earn Target
 	Then I should be able to select Earn target successfully
 
 	@automate
-Scenario: Edit Earn Target
-    Given I have navigated to profile page and clicked on Earn Target
-	When I click on Edit Earn Target
+Scenario: EditEarnTarget
+    Given I have navigated to profile page and clicked on edit earn Target
 	Then I should be able to Edit earn target successfully
 
 	@automate
