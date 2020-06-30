@@ -46,9 +46,24 @@ namespace MarsFramework.Specflow.StepBinding
         {
 
             //Read data from Excel file
-            //ExcelLib.PopulateInCollection(ExcelPath, "Search-Skills");
-            //string category = ExcelLib.ReadData(2, "Category");
-            //string subcategory = ExcelLib.ReadData(4, "SubCategory");
+            ExcelLib.PopulateInCollection(ExcelPath, "Search-Skills");
+            //string searchSkill = ExcelLib.ReadData(2, "SearchSkills");
+            //var searchSkillsObj = (Searchskills)_scenarioContext["searchSkillsObj"];
+            //_scenarioContext["searchSkill"] = searchSkill;
+            //searchSkillsObj.skillSearchInput(searchSkill);
+
+            string category = ExcelLib.ReadData(2, "Category");
+            string subcategory = ExcelLib.ReadData(4, "SubCategory");
+
+           // _scenarioContext["category"] = category;
+            //_scenarioContext["subcategory"] = subcategory;
+            //var SearchskillsObj = (Searchskills)_scenarioContext["SearchskillsObj"];
+            //SearchskillsObj.SkillsCategory(category, subcategory);
+            
+            var SearchskillsObj = new Searchskills();
+            SearchskillsObj.ClickSearch();
+            SearchSkillsOnline();
+            SearchskillsObj.SkillsCategory(category, subcategory);
 
         }
 
@@ -64,7 +79,7 @@ namespace MarsFramework.Specflow.StepBinding
         }
 
 
-
+                
         [Then(@"The search results should be displayed by category and subcategory")]
         public void ThenTheSearchResultsShouldBeDisplayedByCategoryAndSubcategory()
         {

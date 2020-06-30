@@ -28,7 +28,8 @@ namespace MarsFramework.Pages
         
         //Click on Availability Hour dropdown
         //private IWebElement AvailabilityHoursOpt => GlobalDefinitions.driver.FindElement(By.XPath("//select[@name='availabiltyHour']"));
-        IWebElement EditAvailabilityHours => GlobalDefinitions.driver.FindElement(By.XPath("//select[@name='availabiltyType']"));
+        //IWebElement EditAvailabilityHours => GlobalDefinitions.driver.FindElement(By.XPath("//select[@name='availabiltyType']"));
+        IWebElement EditAvailabilityHours => GlobalDefinitions.driver.FindElement(By.XPath("//select[@name='availabiltyHour']"));
 
         //Find Earn Target button salary
         private IWebElement Salary => GlobalDefinitions.driver.FindElement(By.XPath("//i[@class='large dollar icon']//following-sibling::strong[text()='Earn Target']/ancestor::div[@class='item']//div[@class='right floated content']//i[@class='right floated outline small write icon']"));
@@ -57,6 +58,7 @@ namespace MarsFramework.Pages
         private IWebElement GermanRemoveBtn => GlobalDefinitions.driver.FindElement(By.XPath("//td[text()='German']//following-sibling::td[@class='right aligned']//i[@class='remove icon']"));
         //IWebElement getLanguagetextValue => GlobalDefinitions.driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody/tr/td[1]'"));
         public void EditProfile(string profileAvailabilityTime, string profileAvailabilityHours, string profileSalaryExpected)
+        //public void EditProfile(string profileAvailabilityTime, int profileAvailabilityHours, string profileSalaryExpected)
         {
             //Populate the excel data
             GlobalDefinitions.ExcelLib.PopulateInCollection(Base.ExcelPath, "profile");
@@ -71,6 +73,7 @@ namespace MarsFramework.Pages
             //update/edit availability hours in a week
             AvailabilityHours.Click();
             new SelectElement(EditAvailabilityHours).SelectByText(profileAvailabilityHours);
+            //new SelectElement(EditAvailabilityHours).SelectByValue(profileAvailabilityHours);
             Base.test.Log(LogStatus.Info, "Availability hours has been updated");
 
             //update/edit salary in a week  
@@ -80,6 +83,7 @@ namespace MarsFramework.Pages
         }
         public void EditProfileDesc(string profileDescription)
         {
+            GlobalDefinitions.wait(5);
             //Click edit description button/icon
             DescriptionBtn.Click();
 

@@ -162,9 +162,13 @@
     <Compile Include="Pages\SignUp.cs" />
     <Compile Include="Pages\Profile.cs" />
     <Compile Include="Specflow\StepBinding\BaseHooks.cs" />
+    <Compile Include="Specflow\StepBinding\ProfileAvailabilitySteps.cs" />
+    <Compile Include="Specflow\StepBinding\ProfileDescriptionSteps.cs" />
+    <Compile Include="Specflow\StepBinding\ProfileLanguageSteps.cs" />
     <Compile Include="Specflow\StepBinding\RegisrationSteps.cs" />
     <Compile Include="Specflow\StepBinding\SearchSkillsSteps.cs" />
     <Compile Include="Specflow\StepBinding\SignInSteps.cs" />
+    <Compile Include="Specflow\StepBinding\_scenarioContext.cs" />
     <Compile Include="Test\BaseTest.cs" />
     <Compile Include="Test\ProfileTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -184,11 +188,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Specflow\Features\Profile.feature" />
+    <None Include="Specflow\Features\ProfileAvailability.feature" />
+    <None Include="Specflow\Features\ProfileDescription.feature" />
+    <None Include="Specflow\Features\ProfileLanguage.feature" />
     <None Include="Specflow\Features\Regisration.feature" />
     <None Include="Specflow\Features\SearchSkills.feature" />
     <None Include="Specflow\Features\SignIn.feature" />
-    <None Include="Specflow\Features\SignUp.feature" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\packages\WebDriver.ChromeDriver.win32.2.41.0\content\chromedriver.exe">
